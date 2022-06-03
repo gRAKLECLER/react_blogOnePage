@@ -13,6 +13,8 @@ export default function FormArticles() {
     const handleClick = (e) => {
         e.preventDefault()
         createArticleApi(article)
+
+        setArticle({...article, title: "", content: ""})
     }
 
     return (
