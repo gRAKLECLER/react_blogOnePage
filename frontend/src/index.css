@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.blog {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+input {
+  padding: .4rem;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: all .3s ease-in;
+}
+
+input:focus {
+  border-bottom: 1px solid blueviolet;
+}
+
+input:focus::placeholder {
+  color: blueviolet;
+}
+
+
+
+button {
+  border: none;
+  padding: .4rem;
+  width: 100px;
+  border-radius: 8px;
+  background-color: blueviolet;
+  color: white;
+}
+
+textarea {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: .4rem;
+  outline: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
